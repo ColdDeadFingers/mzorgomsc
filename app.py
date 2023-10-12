@@ -10,7 +10,7 @@ import joblib
 performance_data = pd.read_csv('employeeraw.csv')
 
 # Load the data
-@st.cache
+@st.cache_resource
 def load_data():
     df = pd.read_csv('employeeraw.csv')  # Replace with your CSV file path
     return df
